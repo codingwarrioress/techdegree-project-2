@@ -1,0 +1,314 @@
+/************************************
+  GENERAL STYLING
+*************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 400;
+	text-align: center;
+	background-color: #f2f2f2;  
+	margin: 0%;
+}
+
+h1,
+h3,
+nav li {
+	font-family: 'Abril Fatface', sans-serif;
+	text-transform: uppercase;
+}
+
+h1 {
+	text-transform: none;
+}
+
+h4 {
+	text-transform: none;
+	color: #0d0d0d;
+	font-size: 1.25em;
+	letter-spacing: 1px;
+}
+
+hr {
+	max-width: 90%;
+}
+
+img {
+	max-width: 90%;
+}
+
+.profile-img {
+	margin-left: 30px;
+	margin-right: 30px;
+	max-width: 20%;
+	max-height: 20%;
+	border-radius: 50%
+}
+
+
+
+
+/************************************
+  EXTRA CREDIT - ADDITIONS
+*************************************/
+
+/* Additional Section added >> 'Skills' section
+with links */
+
+/* New background color >> "Skills" in main section*/
+
+/* CHnaged the color of at least one text >> "Contact */
+
+/* Additional styling for links >> hover state */
+
+/* Navigation bar >> used HTML 5 <nav> */
+
+
+
+/************************************
+  HEADER & NAVBAR 1
+*************************************/
+
+#header {
+	padding: 0 20px 20px 20px;
+}
+
+
+nav li {
+	list-style: none;
+	background-color: #fff;
+
+}
+
+nav a {
+	text-decoration: none;
+	color: #000;
+}
+
+ #nav1 li {
+ 	display: block;
+ }
+
+.item-1,
+.item-2,
+.item-3,
+.item-4 {
+	margin-bottom: 5px;
+	padding: 10px 0;
+}
+
+.item-4 {
+	margin-bottom: 30px;
+}
+
+
+
+/************************************
+  MAIN CONTENT
+*************************************/
+
+.main {
+	background-color: #fff;
+	padding-bottom: 30px;
+	padding-top: 30px;
+/*	padding: 0 10px;*/
+}
+
+#skills {
+	background-color: #ffdacc;
+	width: auto;
+	margin-left: 20px;
+	margin-right: 20px
+}
+
+.col {
+	padding-top: 40px;
+}
+
+#skills {
+	padding-bottom: 20px;
+	margin-bottom: 40px
+}
+
+/************************************
+  FOOTER & NAVBAR 2
+*************************************/
+
+#footer {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#nav2 li {
+	display: inline-block;
+	background-color: #f2f2f2;
+	text-transform: none;
+}
+ 
+ .float1 {
+ 	float: left;
+ }
+
+.float2 {
+	float: right;
+}
+
+.hide2 {
+	display: none;
+}
+
+.contact a {
+	color: #000;
+	text-decoration: none;
+} 
+
+.contact span {
+	font-weight: bold;
+}
+
+.contact {
+	list-style: none;
+}
+
+#text-color {
+	color: #ff6633;
+}
+
+/************************************
+  PSEUDO LINKS
+*************************************/
+
+
+a:hover {
+	color: #52bab3;
+}
+
+
+
+/************************************
+	MEDIA QUERIES
+ ************************************/
+
+/******* min-width 768px *******/
+
+ @media (min-width: 768px) {
+
+ 	.container {
+ 		width: 90%;
+ 		margin: auto;
+ 	}
+
+ 	#nav1 li {
+ 		display: inline-block;
+ 		background-color: #f2f2f2;
+ 	}
+
+ 	.item-1,
+ 	.item-2,
+ 	.item-3 {
+ 		padding-right: 30px;
+ 	}
+
+	.profile-img {
+		float: right;
+		height: 40%;
+		width: 40%;
+	}
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	#header {
+		padding-bottom: 50px;
+		margin: 0;
+	}
+
+	#header p {
+		text-align: left;
+		/*font-size: 1.25em;*/
+	}
+
+	.main {
+		width: 100%;
+	}
+
+	#nav2 {
+		padding-bottom: 50px;
+	}
+
+	 .hide { 
+		display: none;
+	}
+
+	.hide2 {
+		display: inline-block;
+	}
+
+	.float3,
+	.float4,
+	.float5,
+	.float6 {
+		float: right;
+		padding-right: 20px;
+	}
+
+	.col{
+		width: 50%;
+	}
+ 	
+	.col-1,
+ 	.col-3,
+ 	.col-5 {
+ 		float: left;
+ 	}
+
+ 	.col-2,
+ 	.col-4,
+ 	.col-6 {
+ 		float: right;
+ 	}
+
+ }
+
+
+
+/******* min-width 1024px *******/
+
+ @media (min-width: 1024px) {
+ 	.container {
+ 		width: auto;
+ 		max-width: 1150px;
+ 	}
+
+ 	.col {
+ 		width: 33.33%;
+ 	}
+
+	/*.name {
+		position: absolute;
+		top: 0;
+		left: 20px;
+	}
+	*/
+
+	.name {
+		float: left;
+	}
+
+	#nav {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+
+}
+
+
+
