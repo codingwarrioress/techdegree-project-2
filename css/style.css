@@ -76,6 +76,9 @@ with links */
 	padding: 0 20px 20px 20px;
 }
 
+#nav1 {
+	padding-left: 0;	/* gets rid of extra spacing on lefts side*/
+}
 
 nav li {
 	list-style: none;
@@ -141,6 +144,15 @@ nav a {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
+
+/*#nav2 {
+	padding-left: 0;   gets rid of extra spacing on lefts side
+}*/
+
+#nav2 {
+	padding: 0 30px;  /* this adds padding for both left and right*/
+}
+
 
 #nav2 li {
 	display: inline-block;
